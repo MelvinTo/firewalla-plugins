@@ -4,13 +4,13 @@ network:
   - port: 8388
     protocol: tcp
     port_forward: true
-    port_forward_interface: pppoe0
-    port_forward_port: 18388
+      interface: pppoe0
+      port: 18388
   - port: 8388
     protocol: udp
-    port_forward: true
-    port_forward_interface: pppoe0
-    port_forward_port: 18388
+    port_forward:
+      interface: pppoe0
+      port: 18388
   lan_routable: false
   wan_routable: true  
 env:
