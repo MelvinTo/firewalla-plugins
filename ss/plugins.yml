@@ -1,5 +1,6 @@
 version: '1'
 network:
+  name: ss
   ports:
   - port: 8388
     protocol: tcp
